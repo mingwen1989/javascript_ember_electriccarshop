@@ -35,3 +35,7 @@
   box-shadow:1px 1px 1px #ccc;
   margin-bottom:0;
 }
+
+.form-group {
+    margin-bottom: 6px;
+}
