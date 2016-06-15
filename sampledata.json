@@ -1,0 +1,30 @@
+
+{ "cars": [{
+    "make": "Audi",
+    "model": "A3 E-Tron",
+    "price": "37900",
+    "range": "16",
+    "description": "After years of developing all kinds of plug-in prototype, Audi put one on sale in January 2016. The A3 Sportback platform has a compelling mix of attributes—elegant lines, high-quality materials and practicality. Combine that with a capable 1.4-liter turbocharged gas engine and an electric powertrain providing about 16 miles of electric driving. The result is a small snazzy and robust plug-in hybrid.",
+    "power": "electric and gasoline",
+    "type": "hatchback",
+    "image": "http://www.plugincars.com/sites/default/files/imagecache/fullsize_620w/audi-etron-7-620.jpg"
+  }, {
+    "make": "BMW",
+    "model": "i3",
+    "price": "43300",
+    "range": "81",
+    "description": "The stylish if slightly odd-looking BMW i3 is the lightest EV on the market. That makes it very efficient while providing a fast and fun 170-horsepower ride. The i3's battery pack delivers more than 80 miles of range. The electric Bimmer is also available with a small gas engine that essentially doubles that distance.",
+    "power": "electric",
+    "type": "sedan",
+    "image": "http://www.plugincars.com/sites/default/files/imagecache/fullsize_620w/P90128960_highRes.jpg"
+  }, {
+    "make": "BMW",
+    "model": "i8",
+    "price": "137000",
+    "range": "25",
+    "description": "The i8 is BMW's expensive sleek futuristic plug-in hybrid supercar. The car is powered in a one-two punch by a powerful 96-kilowatt (129-horsepower) electric motor driving the front wheels—and an efficient 230-horsepower 1.5-liter turbocharged three-cylinder gasoline engine motivating the rear wheels. The car has a delightful split personality: switching on command between virtuous EV silence, and a delightful Porsche-like engine note when driven as a sports machine.",
+    "power": "electric and gasoline",
+    "type": "coupe",
+    "image": "http://www.plugincars.com/sites/default/files/imagecache/fullsize_620w/bmw-i8-beach-front-closed-620.jpg"
+  }]
+}
