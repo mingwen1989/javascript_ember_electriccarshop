@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  shoppingCart: Ember.inject.service(),
+
   actions: {
     saveCar() {
       var params = {
@@ -14,6 +16,9 @@ export default Ember.Component.extend({
         image: this.get('image'),
       };
       this.sendAction('saveCar', params);
+    },
+    addToCart(car) {
+      this.get('shoppingCart').add(car);
     }
   }
 });
