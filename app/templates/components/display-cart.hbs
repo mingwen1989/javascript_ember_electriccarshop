@@ -3,7 +3,7 @@
 <hr style="color:#333;border-top:1px #999 solid">
   <div style="padding-left:30px">
 {{#each shoppingCart.cars as |car|}}
-  <h3>&bull; 1 x {{car.make}} {{car.model}} - ${{car.price}}</h3>
+  {{#link-to 'car-detail' car.id}}<h3>&bull; 1 x {{car.make}} {{car.model}} - ${{car.price}}</h3>{{/link-to}}
 {{/each}}
   </div>
 <hr style="color:#333;border-top:1px #999 solid">

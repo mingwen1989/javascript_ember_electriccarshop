@@ -1,14 +1,14 @@
 <nav class="navbar navbar-default" style="position:fixed">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">
+      {{#link-to 'index'}}<a class="navbar-brand">
         <h1 style="font-family:Monoton;font-size:3.5em">E-Cars Shop</h1>
-      </a>
+      </a>{{/link-to}}
     </div>
   </div>
 
 <ol class="breadcrumb" style="margin-top:55px">
-  <li><a href="#">Home</a></li>
+  <li>{{#link-to 'index'}}Home{{/link-to}}</li>
   <span style="float:right;background:darkgray;padding:5px;border-radius:15px;margin-top:-10px;padding-left:10px;padding-right:10px;">{{#link-to 'view-cart'}}<a style="color:#fff">Cart - ({{cart-counter}}) Items <img width="24" src="https://s31.postimg.org/xt4tpc57v/shopping_cart_button_2.png"></a>{{/link-to}}</span>
 </ol>
 </nav>
