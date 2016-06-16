@@ -47,6 +47,10 @@
     margin-bottom: 6px;
 }
 
-#ember482, #ember440 {
-  display:inline
+
+.ember-view {
+  display:inline;
 }
+/*#ember482, #ember440 {
+  display:inline
+}*/

@@ -1,5 +1,5 @@
-  <img src="{{car.image}}" style="width:95%;">
-  <h1>{{car.make}} {{car.model}}</h1>
+  {{#link-to 'car-detail' car.id}}<img src="{{car.image}}" style="width:95%;">
+  <h1>{{car.make}} {{car.model}}</h1>{{/link-to}}
   <span class="bubble">{{car.type}}</span><span class="bubble">{{car.power}}</span><br>
   <h3>{{car.range}} miles range</h3>
   <h3>${{car.price}}</h3>

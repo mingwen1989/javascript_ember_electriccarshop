@@ -1,0 +1,50 @@
+{{#if updateCarForm}}
+<h1>Update Car</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="make">Make</label>
+          {{input value=make id="make"}}
+        </div>
+
+        <div class="form-group">
+          <label for="model">Model</label>
+          {{input value=model id="model"}}
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price</label>
+          {{input value=price id="price"}}
+        </div>
+
+        <div class="form-group">
+          <label for="range">Range</label>
+          {{input value=range id="range"}}
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          {{input value=description id="description"}}
+        </div>
+
+        <div class="form-group">
+          <label for="power">Power</label>
+          {{input value=power id="power"}}
+        </div>
+
+        <div class="form-group">
+          <label for="type">Type</label>
+          {{input value=type id="type"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image</label>
+          {{input value=image id="image"}}
+        </div>
+
+        <button class="btn" {{action 'updateCar' car}}>Save</button>
+      </form>
+    </div>
+    {{else}}
+        <button class="btn" {{action 'updateCarForm'}}>Update</button>
+    {{/if}}

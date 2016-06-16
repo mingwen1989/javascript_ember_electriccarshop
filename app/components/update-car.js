@@ -1,10 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  shoppingCart: Ember.inject.service(),
-
+  updateCarForm: false,
   actions: {
-    saveCar() {
+    updateCarForm() {
+      this.set('updateCarForm', true);
+    },
+    updateCar(car) {
       var params = {
         make: this.get('make'),
         model: this.get('model'),
@@ -13,12 +15,10 @@ export default Ember.Component.extend({
         description: this.get('description'),
         power: this.get('power'),
         type: this.get('type'),
-        image: this.get('image')
+        image: this.get('image'),
       };
-      this.sendAction('saveCar', params);
-    },
-    addToCart(car) {
-      this.get('shoppingCart').add(car);
+      this.set('updateCarForm', false);
+      this.sendAction('updateCar', car, params);
     }
   }
 });

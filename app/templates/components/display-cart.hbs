@@ -1,11 +1,11 @@
 <div class="cartile" style="width:100%">
   <h1>View Cart</h1>
-<hr style="color:#333;border-top:1px #333 solid">
+<hr style="color:#333;border-top:1px #999 solid">
   <div style="padding-left:30px">
 {{#each shoppingCart.cars as |car|}}
-  <h3>&bull; {{car.make}} {{car.model}} - ${{car.price}}</h3>
+  <h3>&bull; 1 x {{car.make}} {{car.model}} - ${{car.price}}</h3>
 {{/each}}
   </div>
-<hr style="color:#333;border-top:1px #333 solid">
+<hr style="color:#333;border-top:1px #999 solid">
 <h3 style="float:right">Cart Total: ${{shoppingCart.total}}</h3>
 </div>

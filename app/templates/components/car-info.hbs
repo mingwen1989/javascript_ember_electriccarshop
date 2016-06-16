@@ -1,0 +1,22 @@
+<div style="padding:15px;padding-top:140px">
+  <img src="{{car.image}}" style="width:95%;">
+  <h1>{{car.make}} {{car.model}}</h1>
+  <span class="bubble">{{car.type}}</span><span class="bubble">{{car.power}}</span><br>
+  <h3>{{car.range}} miles range</h3>
+  <h3>${{car.price}}</h3>
+  <p>
+    {{car.description}}
+  </p>
+  <button class="btn btn-info" {{action 'addToCart' car}}>Add to Cart</button>
+  <button class="btn btn-danger" {{action 'destroyCar' car}}>Remove From Store</button>
+  {{update-car car=car updateCar="updateCar"}}
+</div>
+
+<div>
+  <h2>Overall User Rating:</h2>
+  <h2>Comments</h2>
+  {{new-comment car=car saveComment="saveComment"}}
+  {{#each car.comments as |comment|}}
+    {{comment.comment}}
+  {{/each}}
+</div>
