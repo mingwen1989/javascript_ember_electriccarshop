@@ -12,11 +12,16 @@
   {{update-car car=car updateCar="updateCar"}}
 </div>
 
-<div>
+<div style="padding:15px">
   <h2>Overall User Rating:</h2>
   <h2>Comments</h2>
-  {{new-comment car=car saveComment="saveComment"}}
+
   {{#each car.comments as |comment|}}
-    {{comment.comment}}
+    <div style="background:#d0f1ff;width:95%;padding:5px;margin-top:10px;border-left:1px #999 solid;">
+    <p style="padding-left:15px">"{{comment.comment}}" <br><span style="padding-left:30px">by {{comment.author}}</span></p>
+    Rated: <span style="font-weight:800">{{comment.rating}}</span> out of 5<br>
+    </div>
   {{/each}}
+    <br>
+    {{new-comment car=car saveComment="saveComment"}}
 </div>
